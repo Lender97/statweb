@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oefening 5</title>
+</head>
+
+<body>
+    <style>
+        input[type="radio"] {
+            accent-color: rgb(244, 21, 207);
+        }
+        
+        .naam {
+            border-color: red;
+        }
+    </style>
+    <form method="get" action="registreren.php">
+        <div>
+            <label for="txtVoornaam">Voornaam:</label>
+            <input type="text" name="txtVoornaam" class="naam" id="txtVoornaam" required>
+        </div>
+        <div>
+            <label for="txtFamilienaam">Familienaam:</label>
+            <input type="text" name="txtFamilienaam" class="naam" id="txtFamilienaam" required>
+        </div>
+        <div>
+            <label for="sltProvincie">Provincie:</label>
+            <select name="sltProvincie" id="sltProvincie">
+                <option value="Limburg" selected="selected">Limburg</option>
+                <option value="Antwerpen">Antwerpen</option>
+                <option value="Oost-Vlaanderen">Oost-Vlaanderen</option>
+                <option value="West-Vlaanderen">West-Vlaanderen</option>
+                <option value="Vlaams-Brabant">Vlaams-Brabant</option>
+                <option value="Waals-Brabant">Waals-Brabant</option>
+                <option value="Luik">Luik</option>
+                <option value="Luxemburg">Luxemburg</option>
+                <option value="Namen">Namen</option>
+                <option value="Henegouwen">Henegouwen</option>
+            </select>
+        </div>
+        <div>
+            <fieldset>
+                <legend>Geslacht</legend>
+                <div>
+                    <label for="rbMan">Man</label>
+                    <input type="radio" name="rbgGeslacht" value="Man" id="rbMan" checked>
+                    <label for="rbVrouw">Vrouw</label>
+                    <input type="radio" name="rbgGeslacht" value="Vrouw" id="rbVrouw">
+                    <label for="rbAnder">Ander</label>
+                    <input type="radio" name="rbgGeslacht" value="Ander" id="rbAnder">
+                </div>
+            </fieldset>
+        </div>
+        <div>
+            <label for="fleFoto">Foto</label>
+            <input type="file" name="fleFoto" id="fleFoto" required>
+        </div>
+        <div>
+            <label for="cbVoorwaarden">Ik ga akkoord met de algemene voorwaarden</label>
+            <input type="checkbox" id="cbVoorwaarden" name="cbVoorwaarden">
+        </div>
+        <input type="submit" name="btnRegistreren" id="btnRegistreren">
+    </form>
+</body>
+
+</html>

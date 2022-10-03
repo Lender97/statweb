@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oefening 2</title>
+</head>
+
+<body>
+    <form method="get" action="registreren.php">
+        <div>
+            <label for="txtVoornaam">Voornaam:</label>
+            <input type="text" id="txtVoornaam" name="txtVoornaam" placeholder="Stijn">
+        </div>
+        <div>
+            <label for="txtFamilienaam">Familienaam:</label>
+            <input type="text" id="txtFamilienaam" name="txtFamilienaam" placeholder="Lenaerts">
+        </div>
+        <div>
+            <label for="txtGebruikersnaam">Gebruikersnaam:</label>
+            <input type="text" name="txtGebruikersnaam" id="txtGebruikersnaam" placeholder="mail@thomasmore.be">
+        </div>
+        <div>
+            <label for="txtNickname">Nickname:</label>
+            <input type="text" name="txtNickname" id="txtNickname" required minlength="5" maxlength="15">
+        </div>
+        <div>
+            <label for="txtPaswoord">Paswoord:</label>
+            <input type="password" name="txtPaswoord" id="txtPaswoord" required>
+        </div>
+        <div>
+            <label for="txtHerhaalPswd">Herhaal paswoord:</label>
+            <input type="password" name="txtHerhaalPswd" id="txtHerhaalPswd" required>
+        </div>
+        <input type="submit" name="btnRegistreren" id="btnRegistreren" value="Registreren">
+    </form>
+</body>
+
+</html>

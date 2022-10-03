@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oefening 3</title>
+</head>
+
+<body>
+    <form method="get" action="gebruiker_registreren.php">
+        <fieldset>
+            <legend>Geslacht</legend>
+            <div>
+                <label for="rbMan">Man</label>
+                <input type="radio" name="rbgGeslacht" value="Man" id="rbMan">
+                <label for="rbVrouw">Vrouw</label>
+                <input type="radio" name="rbgGeslacht" value="Vrouw" id="rbVrouw">
+                <label for="rbAnder">Ander</label>
+                <input type="radio" name="rbgGeslacht" value="Ander" id="rbAnder">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Kleur ogen</legend>
+            <div>
+                <label for="rbBruin">Bruin</label>
+                <input type="radio" name="rbgOgen" id="rbBruin" value="bruin">
+                <label for="rbGroen">Groen</label>
+                <input type="radio" name="rbgOgen" id="rbGroen" value="groen">
+                <label for="rbBlauw">Blauw</label>
+                <input type="radio" name="rbgOgen" id="rbBlauw" value="blauw">
+                <label for="rbGrijs">Grijs</label>
+                <input type="radio" name="rbgOgen" id="rbGrijs" value="grijs">
+            </div>
+        </fieldset>
+        <input type="submit" id="btnRegistreren" name="tbnRegistreren" value="Registreren">
+    </form>
+</body>
+
+</html>
