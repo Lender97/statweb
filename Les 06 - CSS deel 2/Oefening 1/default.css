@@ -1,0 +1,10 @@
+#centreren {
+    width: 300px;
+    padding: 10px;
+    background-color: blue;
+    margin: auto;
+}
+
+.whiteText {
+    color: white;
+}
